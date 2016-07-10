@@ -1,41 +1,44 @@
 /**
  * Created by mattjones on 7/9/16.
  */
-//Packages-----------------------------------------------------------------------------
+//Packages----------------------------------------------------------------------------------------
 var api = require('./API');
 var Winston = require("winston");
-Winston.add(Winston.transports.File, {filename: "ConsumeAPI.log"});
+Winston.add(Winston.transports.File, {filename: "./Logs/ConsumeAPI.log"});
 
 var jade = require('jade');
 var fs = require('fs');
+var settings = require('./config');
 
-//Get the data
+//Process Template Files--------------------------------------------------------------------------
+//Get the data from the API
 api.GetData(function(data) {
 
     //Now get all templates
-    var directory = './Templates';
-    fs.readdir(directory, function(err, files) {
+    fs.readdir(settings.templateDirectory, function(err, files) {
         if (err) {
-            console.log(err);
+            Winston.error(err);
             return;
         }
 
         for (var i = 0; i < files.length; i++) {
 
-            var fullPath = directory + "/" + files[i];
+            var fullPath = settings.templateDirectory + "/" + files[i];
             Winston.info("Template File: " + fullPath);
+            
             var fn = jade.compileFile(fullPath);
             var people = {people: {data: data, count: data.length}};
             var outputTemplate = fn(people);
 
             //Write to file
-            var outputFile = "./Output/" + files[i].replace('.jade', '.txt');
+            var outputFile = settings.outputDirectory + files[i].replace('.jade', '.txt');
             fs.writeFile(outputFile, outputTemplate, function(err) {
                 if(err) {
-                    return console.log(err);
+                    Winston.error(err);
+                    return;
                 }
 
-                console.log("The file was saved!");
+                Winston.info("Output File Saved: " + fullPath);
             });
         }
     });
