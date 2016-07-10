@@ -1,0 +1,5 @@
+{"level":"info","message":"Calling GET on the API","timestamp":"2016-07-10T17:50:49.086Z"}
+{"level":"info","message":"Template File: ./Templates/People.jade","timestamp":"2016-07-10T17:50:49.099Z"}
+{"level":"info","message":"Template File: ./Templates/People2.jade","timestamp":"2016-07-10T17:50:49.212Z"}
+{"level":"info","message":"Output File Saved: ./Templates/People2.jade","timestamp":"2016-07-10T17:50:49.264Z"}
+{"level":"info","message":"Output File Saved: ./Templates/People2.jade","timestamp":"2016-07-10T17:50:49.265Z"}
