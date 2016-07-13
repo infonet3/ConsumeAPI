@@ -59,3 +59,23 @@
 {"level":"info","message":"Template File: ./Templates/People2.jade","timestamp":"2016-07-13T04:34:51.125Z"}
 {"level":"info","message":"Output File Saved: ./Templates/People2.jade","timestamp":"2016-07-13T04:34:51.191Z"}
 {"level":"info","message":"Output File Saved: ./Templates/People2.jade","timestamp":"2016-07-13T04:34:51.191Z"}
+{"level":"info","message":"Calling GET on the API","timestamp":"2016-07-13T04:43:13.557Z"}
+{"level":"info","message":"Template File: ./Templates/People.jade","timestamp":"2016-07-13T04:43:13.576Z"}
+{"level":"info","message":"Template File: ./Templates/People2.jade","timestamp":"2016-07-13T04:43:13.706Z"}
+{"level":"info","message":"Output File Saved: ./Templates/People2.jade","timestamp":"2016-07-13T04:43:13.779Z"}
+{"level":"info","message":"Output File Saved: ./Templates/People2.jade","timestamp":"2016-07-13T04:43:13.779Z"}
+{"level":"info","message":"Calling GET on the API","timestamp":"2016-07-13T04:43:41.242Z"}
+{"level":"info","message":"Template File: ./Templates/People.jade","timestamp":"2016-07-13T04:43:41.247Z"}
+{"level":"info","message":"Template File: ./Templates/People2.jade","timestamp":"2016-07-13T04:43:41.348Z"}
+{"level":"info","message":"Output File Saved: ./Templates/People2.jade","timestamp":"2016-07-13T04:43:41.426Z"}
+{"level":"info","message":"Output File Saved: ./Templates/People2.jade","timestamp":"2016-07-13T04:43:41.426Z"}
+{"level":"info","message":"Calling GET on the API","timestamp":"2016-07-13T04:44:10.032Z"}
+{"level":"info","message":"Template File: ./Templates/People.jade","timestamp":"2016-07-13T04:44:10.037Z"}
+{"level":"info","message":"Template File: ./Templates/People2.jade","timestamp":"2016-07-13T04:44:10.137Z"}
+{"level":"info","message":"Output File Saved: ./Templates/People2.jade","timestamp":"2016-07-13T04:44:10.217Z"}
+{"level":"info","message":"Output File Saved: ./Templates/People2.jade","timestamp":"2016-07-13T04:44:10.218Z"}
+{"level":"info","message":"Calling GET on the API","timestamp":"2016-07-13T04:44:32.349Z"}
+{"level":"info","message":"Template File: ./Templates/People.jade","timestamp":"2016-07-13T04:44:32.355Z"}
+{"level":"info","message":"Template File: ./Templates/People2.jade","timestamp":"2016-07-13T04:44:32.470Z"}
+{"level":"info","message":"Output File Saved: ./Templates/People2.jade","timestamp":"2016-07-13T04:44:32.554Z"}
+{"level":"info","message":"Output File Saved: ./Templates/People2.jade","timestamp":"2016-07-13T04:44:32.554Z"}

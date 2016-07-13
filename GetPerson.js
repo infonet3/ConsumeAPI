@@ -8,6 +8,7 @@ Winston.add(Winston.transports.File, {filename: "./Logs/ConsumeAPI.log"});
 
 var jade = require('jade');
 var fs = require('fs');
+var moment = require('moment');
 var settings = require('./config');
 
 //Process Template Files--------------------------------------------------------------------------
@@ -27,7 +28,7 @@ api.GetData(function(data) {
             Winston.info("Template File: " + fullPath);
             
             var fn = jade.compileFile(fullPath);
-            var people = {people: {data: data, count: data.length}};
+            var people = {people: {data: data, count: data.length, moment: moment}};
             var outputTemplate = fn(people);
 
             //Write to file

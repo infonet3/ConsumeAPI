@@ -1,4 +1,5 @@
-| !{people.count}!{'\r\n'}
+| !{people.count}
+| !{people.moment(Date.now()).format('MM/DD/YYYY')}
 each person in people.data
  | !{person.FirstName}!{'|'}!{person.LastName}!{'|'}!{person.Address}!{'|'}!{person.City}!{'|'}!{person.State}!{'|'}!{person.Zip}!{'\r\n'}
 - var n = 0
