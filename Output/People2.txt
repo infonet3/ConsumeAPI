@@ -14,3 +14,13 @@ Michelle|Jones|Hell|Hell|F Me|
 Carter|Jones|1678|Phoenix|AZ|85085
 Carter|Jones|1678|Phoenix|AZ|85085
 Carter|Jones|1678|Phoenix|AZ|85085
+Value0Value1Value2Value3<=5 
+<=5 
+<=5 
+<=5 
+<=5 
+<=5 
+>5 
+>5 
+>5 
+>5 

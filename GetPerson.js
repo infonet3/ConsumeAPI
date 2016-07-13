@@ -18,7 +18,7 @@ api.GetData(function(data) {
     fs.readdir(settings.templateDirectory, function(err, files) {
         if (err) {
             Winston.error(err);
-            return;
+            process.exit(2);
         }
 
         for (var i = 0; i < files.length; i++) {
@@ -35,7 +35,7 @@ api.GetData(function(data) {
             fs.writeFile(outputFile, outputTemplate, function(err) {
                 if(err) {
                     Winston.error(err);
-                    return;
+                    process.exit(2);
                 }
 
                 Winston.info("Output File Saved: " + fullPath);
